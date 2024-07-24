@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  transform: scale(0.95);
+}
+
+a:active {
+  transform: scale(0.9);
+}
+
+.padding {
+  padding: 15px 30px;
+}
+@media screen and (min-width: 834px) {
+  .padding {
+    padding: 15px 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .padding {
+    padding: 15px 115px;
+  }
+}
+
+.navigation {
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1280px) {
+  .navigation a {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navigation__menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.navigation__menu__marketplace, .navigation__menu__rankings, .navigation__menu__connect, .navigation__menu__signup {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .navigation__menu__marketplace, .navigation__menu__rankings, .navigation__menu__connect, .navigation__menu__signup {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navigation__menu__img {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navigation__menu__signup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #A259FF;
+    padding: 19px 30px;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+}
+.navigation__logo {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__logo img {
+  width: 24px;
+  height: 24px;
+}
+.navigation__logo p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hands {
+  margin-top: 20px;
+}
+.hands__headline {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 834px) {
+  .hands__headline {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hands__headline {
+    font-size: 51px;
+  }
+}
+.hands__subhead {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1280px) {
+  .hands__subhead {
+    font-size: 22px;
+  }
+}
+
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 834px) {
+  .tabbar {
+    display: none;
+  }
+}
+.tabbar__text {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.tabbar__text__p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #858584;
+}
+.tabbar__text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -20px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  background-color: #858584;
+}
+.tabbar__text:hover::after {
+  transform: scaleX(1);
+}
+.tabbar__text__p:hover {
+  color: #ffffff;
+}
+
+.tabbarr {
+  display: none;
+}
+@media screen and (min-width: 834px) {
+  .tabbarr {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.rankings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rankings__header {
+  border: 1px solid #858584;
+  border-radius: 20px;
+  padding: 12px 30px 12px 20px;
+}
+.rankings__header__headers {
+  display: flex;
+  justify-content: space-between;
+}
+.rankings__header__headers__randa {
+  display: flex;
+  gap: 10px;
+}
+.rankings__header__headers__randa__rank, .rankings__header__headers__randa__artist {
+  font-size: 12px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+}
+@media screen and (min-width: 834px) {
+  .rankings__header__headers__stats {
+    display: flex;
+    gap: 135px;
+  }
+}
+.rankings__header__headers__stats__volume {
+  font-size: 12px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+}
+.rankings__header__headers__stats__change {
+  display: none;
+  font-size: 12px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+}
+@media screen and (min-width: 834px) {
+  .rankings__header__headers__stats__change {
+    display: block;
+  }
+}
+.rankings__header__headers__stats__nfts {
+  font-size: 12px;
+  color: #858584;
+  font-family: "Space Mono", monospace;
+}
+@media screen and (max-width: 1279px) {
+  .rankings__header__headers__stats__nfts {
+    display: none;
+  }
+}
+.rankings__items {
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  padding: 12px 25px 12px 10px;
+}
+.rankings__items__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rankings__items__item__randa {
+  display: flex;
+  gap: 10px;
+}
+.rankings__items__item__randa__rank {
+  border: none;
+  background-color: #3b3b3b;
+  border-radius: 50px;
+  width: 24px;
+  color: #858584;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rankings__items__item__randa__rank P {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+}
+.rankings__items__item__randa__artist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rankings__items__item__randa__artist p {
+  font-weight: 400;
+}
+@media screen and (min-width: 834px) {
+  .rankings__items__item__volume {
+    display: flex;
+    gap: 90px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rankings__items__item__volume {
+    display: flex;
+    gap: 125px;
+  }
+}
+.rankings__items__item__volume__change {
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+  color: #00ac4f;
+}
+@media screen and (min-width: 834px) {
+  .rankings__items__item__volume__change {
+    display: block;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .rankings__items__item__volume__nfts {
+    display: none;
+  }
+}
+.rankings__items__item__volume__number {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 40px 115px;
+    display: flex;
+    gap: 31px;
+  }
+}
+.footer__nft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__nft {
+    width: 100%;
+  }
+}
+.footer__nft__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__nft__logo__header {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Space Mono", monospace;
+}
+.footer__nft__title__tt1 {
+  margin-bottom: 10px;
+}
+.footer__nft__title__tt1, .footer__nft__title__tt2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+}
+.footer__nft__icon {
+  display: flex;
+  gap: 10px;
+}
+.footer__explore {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__explore {
+    width: 40%;
+  }
+}
+.footer__explore__tt {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Space Mono", monospace;
+}
+.footer__explore__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+}
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 834px) {
+  .footer__join {
+    width: 60%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__join {
+    width: 100%;
+  }
+}
+.footer__join__tt {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Space Mono", monospace;
+}
+.footer__join__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #cccccc;
+}
+.footer__join__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 834px) {
+  .footer__join__mobile {
+    width: 60%;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__join__mobile {
+    width: 100%;
+  }
+}
+.footer__join__mobile__enter {
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+}
+@media screen and (min-width: 834px) {
+  .footer__join__mobile__enter {
+    padding: 21px;
+  }
+}
+.footer__join__mobile__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #A259FF;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (min-width: 834px) {
+  .footer__join__mobile__button {
+    position: absolute;
+    align-self: flex-end;
+    padding: 19px 50px;
+  }
+}
+
+.frame {
+  padding-top: 20px;
+  border-top: 1px solid #858584;
+  background-color: #3b3b3b;
+}
+.frame__text {
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 400;
+}
