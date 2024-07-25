@@ -186,12 +186,12 @@ a:active {
 @media screen and (min-width: 834px) {
   .create__button {
     margin: 15px 50px;
+    padding: 12px 50px;
   }
 }
 @media screen and (min-width: 1280px) {
   .create__button {
     padding: 12px 50px;
-    width: 40%;
   }
 }
 .create__img {

@@ -176,10 +176,10 @@ a:active {
         margin-bottom: 20px;
         @media screen and (min-width: 834px) {
             margin: 15px 50px;
+            padding: 12px 50px;
         }
         @media screen and (min-width: 1280px) {
             padding: 12px 50px;
-            width: 40%;
         }
     }
     &__img {

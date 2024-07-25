@@ -241,3 +241,7 @@ img:active {
 .info__button__button2:active {
   transform: scale(0.9);
 }
+
+button {
+  cursor: pointer;
+}

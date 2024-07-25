@@ -106,6 +106,16 @@ a:active {
   -o-object-fit: fill;
      object-fit: fill;
 }
+@media screen and (min-width: 834px) {
+  .image__img1 {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .image__img1 {
+    height: 350px;
+  }
+}
 .image__img2 {
   position: absolute;
   z-index: 2;

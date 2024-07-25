@@ -101,6 +101,12 @@ a:active {
     &__img1 {
         z-index: 1;
         object-fit: fill;
+        @media screen and (min-width: 834px) {
+            height: 280px;
+        }
+        @media screen and (min-width: 1280px) {
+            height: 350px;
+        }
     }
     &__img2 {
         position: absolute;
